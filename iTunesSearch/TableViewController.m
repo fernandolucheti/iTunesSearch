@@ -31,7 +31,7 @@
     midias = [itunes buscarMidias:@"Apple"];
     
 #warning Necessario para que a table view tenha um espaco em relacao ao topo, pois caso contrario o texto ficara atras da barra superior
-    self.tableview.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.tableview.bounds.size.width, 15.f)];
+    //self.tableview.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.tableview.bounds.size.width, 15.f)];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,6 +39,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(BOOL)prefersStatusBarHidden{
+    return YES;
+}
 
 #pragma mark - Metodos do UITableViewDataSource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -56,12 +59,22 @@
     
     [celula.nome setText:filme.nome];
     [celula.tipo setText:@"Filme"];
+    [celula.tipoFilme setText:filme.genero];
     
     return celula;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 70;
+}
+
+#pragma mark - searchBar
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    iTunesManager *itunes = [iTunesManager sharedInstance];
+    midias = [itunes buscarMidias:searchBar.text];
+    //Filme *filme = [midias objectAtIndex:indexPath.row];
+    //filmes = [[iTunesManager sharedInstance]buscarMidias:searchBar.text];
+    [self.tableview reloadData];
 }
 
 
