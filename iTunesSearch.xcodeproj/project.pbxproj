@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B2B1B461AB3245F00342729 /* Musica.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B1B451AB3245F00342729 /* Musica.m */; };
+		8B2B1B491AB3247500342729 /* Podcast.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B1B481AB3247500342729 /* Podcast.m */; };
+		8B2B1B4C1AB3249E00342729 /* eBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B1B4B1AB3249E00342729 /* eBook.m */; };
+		8B2B1B501AB3343200342729 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B1B4E1AB3343200342729 /* DetailViewController.m */; };
+		8B2B1B511AB3343200342729 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B2B1B4F1AB3343200342729 /* DetailViewController.xib */; };
 		8B77253B1AB1AE0E002702E6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B77253A1AB1AE0E002702E6 /* Localizable.strings */; };
 		92C21CB61AAE757A0052ABE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C21CB51AAE757A0052ABE6 /* main.m */; };
 		92C21CB91AAE757A0052ABE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C21CB81AAE757A0052ABE6 /* AppDelegate.m */; };
@@ -31,6 +36,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B2B1B441AB3245F00342729 /* Musica.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Musica.h; path = Entidades/Musica.h; sourceTree = "<group>"; };
+		8B2B1B451AB3245F00342729 /* Musica.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Musica.m; path = Entidades/Musica.m; sourceTree = "<group>"; };
+		8B2B1B471AB3247500342729 /* Podcast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Podcast.h; sourceTree = "<group>"; };
+		8B2B1B481AB3247500342729 /* Podcast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Podcast.m; sourceTree = "<group>"; };
+		8B2B1B4A1AB3249E00342729 /* eBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eBook.h; sourceTree = "<group>"; };
+		8B2B1B4B1AB3249E00342729 /* eBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eBook.m; sourceTree = "<group>"; };
+		8B2B1B4D1AB3343200342729 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		8B2B1B4E1AB3343200342729 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		8B2B1B4F1AB3343200342729 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		8B77253A1AB1AE0E002702E6 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		92C21CB01AAE757A0052ABE6 /* iTunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C21CB41AAE757A0052ABE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +88,9 @@
 		92C21CA71AAE757A0052ABE6 = {
 			isa = PBXGroup;
 			children = (
+				8B2B1B4D1AB3343200342729 /* DetailViewController.h */,
+				8B2B1B4E1AB3343200342729 /* DetailViewController.m */,
+				8B2B1B4F1AB3343200342729 /* DetailViewController.xib */,
 				92C21CB21AAE757A0052ABE6 /* iTunesSearch */,
 				92C21CCC1AAE757A0052ABE6 /* iTunesSearchTests */,
 				92C21CB11AAE757A0052ABE6 /* Products */,
@@ -149,6 +166,12 @@
 			children = (
 				92C21CE61AAE858E0052ABE6 /* Filme.h */,
 				92C21CE71AAE858E0052ABE6 /* Filme.m */,
+				8B2B1B441AB3245F00342729 /* Musica.h */,
+				8B2B1B451AB3245F00342729 /* Musica.m */,
+				8B2B1B471AB3247500342729 /* Podcast.h */,
+				8B2B1B481AB3247500342729 /* Podcast.m */,
+				8B2B1B4A1AB3249E00342729 /* eBook.h */,
+				8B2B1B4B1AB3249E00342729 /* eBook.m */,
 			);
 			name = Entidades;
 			sourceTree = "<group>";
@@ -235,6 +258,7 @@
 			files = (
 				92C21CC11AAE757A0052ABE6 /* Images.xcassets in Resources */,
 				8B77253B1AB1AE0E002702E6 /* Localizable.strings in Resources */,
+				8B2B1B511AB3343200342729 /* DetailViewController.xib in Resources */,
 				92C21CE21AAE76930052ABE6 /* TableViewCell.xib in Resources */,
 				92C21CDD1AAE75DC0052ABE6 /* TableView.xib in Resources */,
 			);
@@ -256,8 +280,12 @@
 			files = (
 				92C21CBC1AAE757A0052ABE6 /* TableViewController.m in Sources */,
 				92C21CDB1AAE75B30052ABE6 /* iTunesManager.m in Sources */,
+				8B2B1B491AB3247500342729 /* Podcast.m in Sources */,
 				92C21CB91AAE757A0052ABE6 /* AppDelegate.m in Sources */,
 				92C21CE81AAE858E0052ABE6 /* Filme.m in Sources */,
+				8B2B1B501AB3343200342729 /* DetailViewController.m in Sources */,
+				8B2B1B4C1AB3249E00342729 /* eBook.m in Sources */,
+				8B2B1B461AB3245F00342729 /* Musica.m in Sources */,
 				92C21CE11AAE76930052ABE6 /* TableViewCell.m in Sources */,
 				92C21CB61AAE757A0052ABE6 /* main.m in Sources */,
 			);
@@ -365,9 +393,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iTunesSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -376,6 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iTunesSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
